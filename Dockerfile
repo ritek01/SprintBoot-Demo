@@ -7,5 +7,5 @@ COPY mvnw pom.xml ./
 RUN ./mvnw dependency:go-offline
  
 COPY src ./src
- 
+#cmd to run docker
 CMD ["./mvnw", "spring-boot:run"]
